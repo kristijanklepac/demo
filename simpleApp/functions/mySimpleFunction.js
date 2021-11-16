@@ -9,7 +9,7 @@ function sendResponse(statusCode, message, context) {
 	const message1 = JSON.stringify(message) 
 	const response = {
 		statusCode: statusCode,
-		body: `RGT 2.0 App. The version of your function is: ${context.functionVersion}. \n ${message1}`
+		body: `RGT 2.0.0 App. The version of your function is: ${context.functionVersion}. \n ${message1}`
 	};
 	return response
 }
